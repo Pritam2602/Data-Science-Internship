@@ -1,6 +1,7 @@
 # Virtual environment
 venv/
 Flask/venv/
+regex_matcher/venv/
 
 # Python cache
 __pycache__/

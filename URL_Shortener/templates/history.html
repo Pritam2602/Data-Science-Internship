@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+</head>
+<body>
+
+<h2>URL History</h2>
+
+<table border="1">
+    <tr>
+        <th>Original URL</th>
+        <th>Short URL</th>
+        <th>Date</th>
+    </tr>
+
+    {% for url in urls %}
+    <tr>
+        <td>{{ url.original_url }}</td>
+        <td>
+            <a href="/{{ url.short_code }}">
+                {{ request.host_url }}{{ url.short_code }}
+            </a>
+        </td>
+        <td>{{ url.created_at }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br>
+<a href="/">Go Back</a>
+
+</body>
+</html>

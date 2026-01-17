@@ -2,7 +2,7 @@
 venv/
 Flask/venv/
 regex_matcher/venv/
-URL_Shortener/venv/
+URL_Shortener/instance/
 
 # Python cache
 __pycache__/
